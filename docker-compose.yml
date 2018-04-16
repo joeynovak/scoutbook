@@ -1,0 +1,10 @@
+version: "3"
+services:
+  restapi:
+    image: scoutbook-restapi:develop
+    ports:
+      - 80:3000
+    volumes:
+      - /restapi/root/var/restapi, /var/restapi
+  mongo:
+    image: scoutbook-mongo:develop
